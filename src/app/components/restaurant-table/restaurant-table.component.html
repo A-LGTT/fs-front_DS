@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Titre</th>
+    <th>Adresse</th>
+    <th>Note moyenne</th>
+    <th>Detail</th>
+  </tr>
+  <tr *ngFor="let Restaurant of restaurants">
+    <td>{{Restaurant.nom}}</td>
+    <td>{{Restaurant.adresse}}</td>
+    <td>{{Restaurant.moyenne}}</td>
+    <td><a routerLink="/restaurants/{{Restaurant.id}}">Detail</a></td>
+  </tr>
+</table>
